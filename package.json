@@ -18,7 +18,8 @@
     "dev": "bun run ./src/bootstrap-entry.ts",
     "start": "bun run ./src/bootstrap-entry.ts",
     "version": "bun run ./src/bootstrap-entry.ts --version",
-    "dev:restore-check": "bun run ./src/dev-entry.ts"
+    "dev:restore-check": "bun run ./src/dev-entry.ts",
+    "postinstall": "bash ./scripts/install-openclaude-launcher.sh"
   },
   "dependencies": {
     "@alcalzone/ansi-tokenize": "*",
